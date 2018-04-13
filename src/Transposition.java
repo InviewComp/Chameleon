@@ -8,6 +8,9 @@ import static java.lang.System.setOut;
  * Created by mikha on 12.04.2018.
  */
 public class Transposition {
+    public static final String ANSI_RESET = "\u001B[0m";
+    public static final String ANSI_RED = "\u001B[31m";
+    public static final String ANSI_GREEN = "\u001B[32m";
     final static int w = 4;
     private static void print_matrix(String s){
 
@@ -79,7 +82,7 @@ public class Transposition {
 
         Scanner scn=new Scanner(System.in);
 
-                    System.out.println("Введите тексст для шифрования:");
+                    System.out.println(ANSI_GREEN+"Введите тексст для шифрования:");
                     String text = scn.nextLine();
                     out.print("Обработка текста");
                     print_dot(3);
