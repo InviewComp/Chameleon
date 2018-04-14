@@ -13,6 +13,41 @@ public class Encrypt {
             String commandDec=scn.next();
 
             switch (commandDec){
+                case "/csr":
+                    boolean inCSR=true;
+                    while (inCSR) {
+                        out.println("Encrypt/Csr/" + user + ">");
+                        String commandST = scn.next();
+                        switch (commandST) {
+                            case "-s":
+                                new Morze();
+                                break;
+                            case "-h":
+                                new MorzeInfo();
+                                break;
+                            case "-e":
+                                inCSR = false;
+                        }
+                    }
+                    break;
+                //Морзе
+                case "/mrz":
+                    boolean inMRZ=true;
+                    while (inMRZ) {
+                        out.println("Encrypt/Mrz/" + user + ">");
+                        String commandST = scn.next();
+                        switch (commandST) {
+                            case "-s":
+                                new Morze();
+                                break;
+                            case "-h":
+                                new MorzeInfo();
+                                break;
+                            case "-e":
+                                inMRZ = false;
+                        }
+                    }
+                    break;
                 //Бинарщина
                 case "/bnr":
                     boolean inBNR=true;
@@ -74,6 +109,11 @@ public class Encrypt {
                     out.println("Конец работы шифровальщика");
                     isStart=false;
                     break;
+
+                case "/help":
+                new Helpshifr();
+                    break;
+
 
 
                 default:
