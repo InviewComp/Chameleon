@@ -13,6 +13,7 @@ public class Encrypt {
             String commandDec=scn.next();
 
             switch (commandDec){
+                //Цезарь
                 case "/csr":
                     boolean inCSR=true;
                     while (inCSR) {
@@ -20,10 +21,10 @@ public class Encrypt {
                         String commandST = scn.next();
                         switch (commandST) {
                             case "-s":
-                                new Morze();
+                                new Caesar();
                                 break;
                             case "-h":
-                                new MorzeInfo();
+                                new CaesarInfo();
                                 break;
                             case "-e":
                                 inCSR = false;
@@ -101,6 +102,8 @@ public class Encrypt {
                         }
                     }
                     break;
+
+
                 case "/exit":
                     new Exit();
                     break;

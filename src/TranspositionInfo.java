@@ -4,6 +4,8 @@ public class TranspositionInfo {
     public static final String ANSI_YELLOW = "\u001B[33m";
     public static final String ANSI_GREEN = "\u001B[32m";
     TranspositionInfo(){
-        out.println(ANSI_YELLOW+"hello with transposition"+ANSI_GREEN);
+        out.println(ANSI_YELLOW+"Шифр перестано́вки — это метод симметричного шифрования, в котором элементы исходного открытого текста меняют местами. " +
+                "Элементами текста могут быть отдельные символы (самый распространённый случай), пары букв, тройки букв, комбинирование этих случаев и так далее." +
+                " Типичными примерами перестановки являются анаграммы. В классической криптографии шифры перестановки можно разделить на два класса:"+ANSI_GREEN);
     }
 }

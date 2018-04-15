@@ -5,6 +5,6 @@ public class BinaryInfo {
     public static final String ANSI_GREEN = "\u001B[32m";
     BinaryInfo(){
 
-        out.println(ANSI_YELLOW+"Hello with binary"+ANSI_GREEN);
+        out.println(ANSI_YELLOW+"Перевод в строки в бинарный вид: Например:100100"+ANSI_GREEN);
     }
 }
