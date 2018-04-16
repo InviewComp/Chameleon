@@ -3,7 +3,6 @@ import java.util.Scanner;
 import static java.lang.System.out;
 
 public class Binary {
-    public static final String ANSI_GREEN = "\u001B[32m";
     public static String dv(int s){
 //перевод и 10-й с.с. в 2-ую с.с.
         int t = s;
@@ -29,7 +28,7 @@ return d;
 
     Binary() throws InterruptedException {
         Scanner in = new Scanner(System.in);
-        System.out.println(ANSI_GREEN+"Введите текст для шифрования:");
+        System.out.println("Введите текст для шифрования:");
         String q = in.nextLine();
         out.print("Обработка текста");
         print_dot(3);

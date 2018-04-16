@@ -3,7 +3,7 @@ import java.util.Scanner;
 import static java.lang.System.out;
 
 public class Morze {
-    public static final String ANSI_GREEN = "\u001B[32m";
+
     //Метод шифрования азбукой морзе русского текста
     static String MorzeRUS(StringBuilder text){
 
@@ -171,7 +171,7 @@ Morze() throws InterruptedException {
 //Создаём сканнер
     Scanner scn = new Scanner(System.in);
 
-    System.out.println(ANSI_GREEN+"Введите текст для шифрования:");
+    System.out.println("Введите текст для шифрования:");
 
     //Вводим текст в одну строку
     String text = scn.nextLine();

@@ -1,10 +1,9 @@
 import static java.lang.System.out;
 
 public class Exit {
-    public static final String ANSI_RESET = "\u001B[0m";
-    public static final String ANSI_GREEN = "\u001B[32m";
+
      Exit(){
-        out.println(ANSI_GREEN+"                                                                                                              \n" +
+        out.println("                                                                                                              \n" +
                 "                                                                                                              \n" +
                 "                                                                                                              \n" +
                 "                                                                                                              \n" +
@@ -46,7 +45,7 @@ public class Exit {
                 "                                                                                                              \n" +
                 "                                                                                                              \n" +
                 "                                                                                                              \n" +
-                "                                                                                                              \n"+ANSI_RESET);
+                "                                                                                                              \n");
         System.exit(1);
     }
 }

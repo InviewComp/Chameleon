@@ -3,7 +3,7 @@ import java.util.Scanner;
 import static java.lang.System.out;
 
 public class Reverse{
-    public static final String ANSI_GREEN = "\u001B[32m";
+
     private void print_dot(int n) throws InterruptedException {
 
         //процедура красивого вывода точкек
@@ -16,7 +16,7 @@ public class Reverse{
     }
     Reverse() throws InterruptedException {
         Scanner in = new Scanner(System.in);
-        System.out.println(ANSI_GREEN + "Введите текст для шифрования:");
+        System.out.println("Введите текст для шифрования:");
         String q = in.nextLine();
         out.print("Обработка текста");
         print_dot(3);

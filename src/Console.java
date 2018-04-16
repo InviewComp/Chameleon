@@ -5,14 +5,12 @@ import java.net.InetAddress;
 import static java.lang.System.out;
 
 public class Console {
-    public static final String ANSI_RESET = "\u001B[0m";
-    public static final String ANSI_RED = "\u001B[31m";
-    public static final String ANSI_GREEN = "\u001B[32m";
+
     public static void main(String args[]) throws UnknownHostException, InterruptedException {
         String computername=InetAddress.getLocalHost().getHostName();
         Scanner scn=new Scanner(System.in);
 
-out.println(ANSI_GREEN+"          _____                    _____                    _____                    _____                    _____                    _____            _____                   _______                   _____          \n" +
+out.println("          _____                    _____                    _____                    _____                    _____                    _____            _____                   _______                   _____          \n" +
         "         /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\                  /\\    \\          /\\    \\                 /::\\    \\                 /\\    \\         \n" +
         "        /::\\    \\                /::\\____\\                /::\\    \\                /::\\____\\                /::\\    \\                /::\\____\\        /::\\    \\               /::::\\    \\               /::\\____\\        \n" +
         "       /::::\\    \\              /:::/    /               /::::\\    \\              /::::|   |               /::::\\    \\              /:::/    /       /::::\\    \\             /::::::\\    \\             /::::|   |        \n" +
