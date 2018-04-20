@@ -4,156 +4,216 @@ import static java.lang.System.out;
 
 public class Morze {
 
+    static String Upper(StringBuilder text){
+
+        StringBuilder n_text = new StringBuilder();
+
+        for (int i=0;i<text.length();i++) {
+            n_text.append(text.substring(i,i+1).toUpperCase());
+        }
+
+        return n_text.toString();
+    }
+
+
     //Метод шифрования азбукой морзе русского текста
-    static String MorzeRUS(StringBuilder text){
+    static String MorzeRUS(StringBuilder otext){
 
         //Создаём StringBuilder - это своего рода конструктор стринга, где можно редачить строчки по индексам и творить лютую магию кр4
         StringBuilder n_text = new StringBuilder();
 
+        String text = Upper(otext);
+
         //Проверяем каждый символ кроме пробела и заменяем
         //БОЛЬШЕ УСЛОВИЙ КРРРРЧЧЧ
         for (int i=0;i<text.length();i++) {
-            if (((int) text.charAt(i)) == (32)) {
-                n_text.append(" ");
-            } else {
+n_text.append(' ');
 
-
-                if ((((int) text.charAt(i)) == (1040)) || (((int) text.charAt(i)) == (1072))) {
-                    n_text.append(".-");
-                }
-
-                if ((((int) text.charAt(i)) == (1041)) || (((int) text.charAt(i)) == (1073))) {
-                    n_text.append("-...");
-                }
-
-                if ((((int) text.charAt(i)) == (1042)) || (((int) text.charAt(i)) == (1074))) {
-                    n_text.append(".--");
-                }
-
-                if ((((int) text.charAt(i)) == (1043)) || (((int) text.charAt(i)) == (1075))) {
-                    n_text.append("--.");
-                }
-
-                if ((((int) text.charAt(i)) == (1044)) || (((int) text.charAt(i)) == (1076))) {
-                    n_text.append("-..");
-                }
-
-                //Пусть это Ёё идёт нахер
-                if ((((int) text.charAt(i)) == (1045)) || (((int) text.charAt(i)) == (1077))||(((int) text.charAt(i)) == (1025))||(((int) text.charAt(i)) == (1105))) {
-                    n_text.append(".");
-                }
-
-
-                if ((((int) text.charAt(i)) == (1046)) || (((int) text.charAt(i)) == (1078))) {
-                    n_text.append("...-");
-                }
-
-                if ((((int) text.charAt(i)) == (1047)) || (((int) text.charAt(i)) == (1079))) {
-                    n_text.append("--..");
-                }
-
-                if ((((int) text.charAt(i)) == (1048)) || (((int) text.charAt(i)) == (1080))) {
-                    n_text.append("..");
-                }
-
-                if ((((int) text.charAt(i)) == (1049)) || (((int) text.charAt(i)) == (1081))) {
-                    n_text.append(".---");
-                }
-
-                if ((((int) text.charAt(i)) == (1050)) || (((int) text.charAt(i)) == (1082))) {
-                    n_text.append("-.-");
-                }
-
-                if ((((int) text.charAt(i)) == (1051)) || (((int) text.charAt(i)) == (1083))) {
-                    n_text.append(".-..");
-                }
-
-                if ((((int) text.charAt(i)) == (1052)) || (((int) text.charAt(i)) == (1084))) {
-                    n_text.append("--");
-                }
-
-                if ((((int) text.charAt(i)) == (1053)) || (((int) text.charAt(i)) == (1085))) {
-                    n_text.append("-.");
-                }
-
-                if ((((int) text.charAt(i)) == (1054)) || (((int) text.charAt(i)) == (1086))) {
-                    n_text.append("---");
-                }
-
-                if ((((int) text.charAt(i)) == (1055)) || (((int) text.charAt(i)) == (1087))) {
-                    n_text.append(".--.");
-                }
-
-                if ((((int) text.charAt(i)) == (1056)) || (((int) text.charAt(i)) == (1088))) {
-                    n_text.append(".-.");
-                }
-
-                if ((((int) text.charAt(i)) == (1057)) || (((int) text.charAt(i)) == (1089))) {
-                    n_text.append("...");
-                }
-
-                if ((((int) text.charAt(i)) == (1058)) || (((int) text.charAt(i)) == (1090))) {
-                    n_text.append("-");
-                }
-
-                if ((((int) text.charAt(i)) == (1059)) || (((int) text.charAt(i)) == (1091))) {
-                    n_text.append("..-");
-                }
-
-                if ((((int) text.charAt(i)) == (1060)) || (((int) text.charAt(i)) == (1092))) {
-                    n_text.append("..-.");
-                }
-
-                if ((((int) text.charAt(i)) == (1061)) || (((int) text.charAt(i)) == (1093))) {
-                    n_text.append("....");
-                }
-
-                if ((((int) text.charAt(i)) == (1062)) || (((int) text.charAt(i)) == (1094))) {
-                    n_text.append("-.-.");
-                }
-
-                if ((((int) text.charAt(i)) == (1063)) || (((int) text.charAt(i)) == (1095))) {
-                    n_text.append("---.");
-                }
-
-                if ((((int) text.charAt(i)) == (1064)) || (((int) text.charAt(i)) == (1096))) {
-                    n_text.append("----");
-                }
-
-                if ((((int) text.charAt(i)) == (1065)) || (((int) text.charAt(i)) == (1097))) {
-                    n_text.append("--.-");
-                }
-
-                if ((((int) text.charAt(i)) == (1066)) || (((int) text.charAt(i)) == (1098))) {
-                    n_text.append(".--.-.");
-                }
-
-                if ((((int) text.charAt(i)) == (1067)) || (((int) text.charAt(i)) == (1099))) {
-                    n_text.append("-.--");
-                }
-
-                if ((((int) text.charAt(i)) == (1068)) || (((int) text.charAt(i)) == (1100))) {
-                    n_text.append("-..-");
-                }
-
-                if ((((int) text.charAt(i)) == (1069)) || (((int) text.charAt(i)) == (1101))) {
-                    n_text.append("...-...");
-                }
-
-                if ((((int) text.charAt(i)) == (1070)) || (((int) text.charAt(i)) == (1102))) {
-                    n_text.append("..--");
-                }
-
-                if ((((int) text.charAt(i)) == (1071)) || (((int) text.charAt(i)) == (1103))) {
-                    n_text.append(".-.-");
-                }
-
-
+            if ((((int) text.charAt(i)) == (65))) {
+                n_text.append(".-");
             }
+
+            if ((((int) text.charAt(i)) == (66))) {
+                n_text.append("-...");
+            }
+
+            if ((((int) text.charAt(i)) == (67))) {
+                n_text.append("-.-.");
+            }
+
+            if ((((int) text.charAt(i)) == (68))) {
+                n_text.append("-..");
+            }
+
+            if ((((int) text.charAt(i)) == (69))) {
+                n_text.append(".");
+            }
+
+            //Пусть это Ёё идёт нахер
+            if ((((int) text.charAt(i)) == (70))) {
+                n_text.append("..-.");
+            }
+
+
+            if ((((int) text.charAt(i)) == (71))) {
+                n_text.append("--.");
+            }
+
+            if ((((int) text.charAt(i)) == (72))) {
+                n_text.append("....");
+            }
+
+            if ((((int) text.charAt(i)) == (73))) {
+                n_text.append("..");
+            }
+
+            if ((((int) text.charAt(i)) == (74))) {
+                n_text.append(".---");
+            }
+
+            if ((((int) text.charAt(i)) == (75))) {
+                n_text.append("-.-");
+            }
+
+            if ((((int) text.charAt(i)) == (76))) {
+                n_text.append(".-..");
+            }
+
+            if ((((int) text.charAt(i)) == (77))) {
+                n_text.append("--");
+            }
+
+            if ((((int) text.charAt(i)) == (78))) {
+                n_text.append("-.");
+            }
+
+            if ((((int) text.charAt(i)) == (79))) {
+                n_text.append("---");
+            }
+
+            if ((((int) text.charAt(i)) == (80))) {
+                n_text.append(".--.");
+            }
+
+            if ((((int) text.charAt(i)) == (81))) {
+                n_text.append("--.-");
+            }
+
+            if ((((int) text.charAt(i)) == (82))) {
+                n_text.append(".-.");
+            }
+
+            if ((((int) text.charAt(i)) == (83))) {
+                n_text.append("...");
+            }
+
+            if ((((int) text.charAt(i)) == (84))) {
+                n_text.append("-");
+            }
+
+            if ((((int) text.charAt(i)) == (85))) {
+                n_text.append("..-");
+            }
+
+            if ((((int) text.charAt(i)) == (86))) {
+                n_text.append("...-");
+            }
+
+            if ((((int) text.charAt(i)) == (87))) {
+                n_text.append(".--");
+            }
+
+            if ((((int) text.charAt(i)) == (88))) {
+                n_text.append("-..-");
+            }
+
+            if ((((int) text.charAt(i)) == (89))) {
+                n_text.append("-.--");
+            }
+
+            if ((((int) text.charAt(i)) == (90))) {
+                n_text.append("--..");
+            }
+
+
+            if ((((int) text.charAt(i)) == (33))) {
+                n_text.append("--..--");
+            }
+            if ((((int) text.charAt(i)) == (34))) {
+                n_text.append(".-..-.");
+            }
+            if ((((int) text.charAt(i)) == (39))) {
+                n_text.append(".----.");
+            }
+            if ((((int) text.charAt(i)) == (47))) {
+                n_text.append("-..-.");
+            }
+            if ((((int) text.charAt(i)) == (40))) {
+                n_text.append("-.--.-");
+            }
+            if ((((int) text.charAt(i)) == (41))) {
+                n_text.append("-.--.-");
+            }
+            if ((((int) text.charAt(i)) == (43))) {
+                n_text.append(".-.-.");
+            }
+            if ((((int) text.charAt(i)) == (44))) {
+                n_text.append(".-.-.-");
+            }
+            if ((((int) text.charAt(i)) == (45))) {
+                n_text.append("-....-");
+            }
+            if ((((int) text.charAt(i)) == (46))) {
+                n_text.append("......");
+            }
+            if ((((int) text.charAt(i)) == (58))) {
+                n_text.append("---...");
+            }
+            if ((((int) text.charAt(i)) == (63))) {
+                n_text.append("..--..");
+            }
+            if ((((int) text.charAt(i)) == (32))) {
+                n_text.append("-...-");
+            }
+
+
+            if ((((int) text.charAt(i)) == (48))) {
+                n_text.append("-----");
+            }
+            if ((((int) text.charAt(i)) == (49))) {
+                n_text.append(".----");
+            }
+            if ((((int) text.charAt(i)) == (50))) {
+                n_text.append("..---");
+            }
+            if ((((int) text.charAt(i)) == (51))) {
+                n_text.append("...--");
+            }
+            if ((((int) text.charAt(i)) == (52))) {
+                n_text.append("....-");
+            }
+            if ((((int) text.charAt(i)) == (53))) {
+                n_text.append(".....");
+            }
+            if ((((int) text.charAt(i)) == (54))) {
+                n_text.append("-....");
+            }
+            if ((((int) text.charAt(i)) == (55))) {
+                n_text.append("--...");
+            }
+            if ((((int) text.charAt(i)) == (56))) {
+                n_text.append("---..");
+            }
+            if ((((int) text.charAt(i)) == (57))) {
+                n_text.append("----.");
+            }
+
+
+
         }
         //Вывод текста. Да, я тоже в шоке.
         System.out.println(n_text.toString());
-        return null;
+        return n_text.toString();
     }
 
     private void print_dot(int n) throws InterruptedException {

@@ -29,7 +29,7 @@ public class Caesar{
         int loc=0;
 
         //Чтобы если юзер тупой и вводил сдвиг больше чем алфавит - то всё было норм..
-        k=k%32;
+        k=k%26;
         //Опять дохера условий
         for (int i=0;i<text.length();i++) {
             if (((int) text.charAt(i)) == (32)) {
@@ -37,293 +37,240 @@ public class Caesar{
             } else {
 
 
-                if (((int) text.charAt(i)) == (1040)) {
-                    if (k>(1071-1040)) {
-                        loc = 1039+(k-(1071-1040));
+                if (((int) text.charAt(i)) == (65)) {
+                    if (k>(90-65)) {
+                        loc = 64+(k-(90-65));
                     }else{
-                        loc = 1040+k;
+                        loc = 65+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1041))) {
-                    if (k>(1071-1041)) {
-                        loc = 1039+(k-(1071-1041));
+                if ((((int) text.charAt(i)) == (66))) {
+                    if (k>(90-66)) {
+                        loc = 64+(k-(90-1066));
                     }else{
-                        loc = 1041+k;
+                        loc = 66+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1042))) {
-                    if (k>(1071-1042)) {
-                        loc = 1039+(k-(1071-1042));
+                if ((((int) text.charAt(i)) == (67))) {
+                    if (k>(90-67)) {
+                        loc = 64+(k-(90-67));
                     }else{
-                        loc = 1042+k;
+                        loc = 67+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1043))) {
-                    if (k>(1071-1043)) {
-                        loc = 1039+(k-(1071-1043));
+                if ((((int) text.charAt(i)) == (68))) {
+                    if (k>(90-68)) {
+                        loc = 64+(k-(90-68));
                     }else{
-                        loc = 1043+k;
+                        loc = 68+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1044))) {
-                    if (k>(1071-1044)) {
-                        loc = 1039+(k-(1071-1044));
+                if ((((int) text.charAt(i)) == (69))) {
+                    if (k>(90-69)) {
+                        loc = 64+(k-(90-69));
                     }else{
-                        loc = 1044+k;
+                        loc = 69+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1045))) {
-                    if (k>(1071-1045)) {
-                        loc = 1039+(k-(1071-1045));
+                if ((((int) text.charAt(i)) == (70))) {
+                    if (k>(90-70)) {
+                        loc = 64+(k-(90-70));
                     }else{
-                        loc = 1045+k;
+                        loc = 70+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1046))) {
-                    if (k>(1071-1046)) {
-                        loc = 1039+(k-(1071-1046));
+                if ((((int) text.charAt(i)) == (71))) {
+                    if (k>(90-71)) {
+                        loc = 64+(k-(90-71));
                     }else{
-                        loc = 1046+k;
+                        loc = 71+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1047))) {
-                    if (k>(1071-1047)) {
-                        loc = 1039+(k-(1071-1047));
+                if ((((int) text.charAt(i)) == (72))) {
+                    if (k>(90-72)) {
+                        loc = 64+(k-(90-72));
                     }else{
-                        loc = 1047+k;
+                        loc = 72+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1048))) {
-                    if (k>(1071-1048)) {
-                        loc = 1039+(k-(1071-1048));
+                if ((((int) text.charAt(i)) == (73))) {
+                    if (k>(90-73)) {
+                        loc = 64+(k-(90-73));
                     }else{
-                        loc = 1048+k;
+                        loc = 73+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1049))) {
-                    if (k>(1071-1049)) {
-                        loc = 1039+(k-(1071-1049));
+                if ((((int) text.charAt(i)) == (74))) {
+                    if (k>(90-74)) {
+                        loc = 64+(k-(90-74));
                     }else{
-                        loc = 1049+k;
+                        loc = 74+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1050))) {
-                    if (k>(1071-1050)) {
-                        loc = 1039+(k-(1071-1050));
+                if ((((int) text.charAt(i)) == (75))) {
+                    if (k>(90-75)) {
+                        loc = 64+(k-(90-75));
                     }else{
-                        loc = 1050+k;
+                        loc = 75+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1051))) {
-                    if (k>(1071-1051)) {
-                        loc = 1039+(k-(1071-1051));
+                if ((((int) text.charAt(i)) == (76))) {
+                    if (k>(90-76)) {
+                        loc = 64+(k-(90-76));
                     }else{
-                        loc = 1051+k;
+                        loc = 76+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1052))) {
-                    if (k>(1071-1052)) {
-                        loc = 1039+(k-(1071-1052));
+                if ((((int) text.charAt(i)) == (77))) {
+                    if (k>(90-77)) {
+                        loc = 64+(k-(90-77));
                     }else{
-                        loc = 1052+k;
+                        loc = 77+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1053))) {
-                    if (k>(1071-1053)) {
-                        loc = 1039+(k-(1071-1053));
+                if ((((int) text.charAt(i)) == (78))) {
+                    if (k>(90-78)) {
+                        loc = 64+(k-(90-78));
                     }else{
-                        loc = 1053+k;
+                        loc = 78+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1054))) {
-                    if (k>(1071-1054)) {
-                        loc = 1039+(k-(1071-1054));
+                if ((((int) text.charAt(i)) == (79))) {
+                    if (k>(90-79)) {
+                        loc = 64+(k-(90-79));
                     }else{
-                        loc = 1054+k;
+                        loc = 79+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1055))) {
-                    if (k>(1071-1055)) {
-                        loc = 1039+(k-(1071-1055));
+                if ((((int) text.charAt(i)) == (80))) {
+                    if (k>(90-80)) {
+                        loc = 64+(k-(90-80));
                     }else{
-                        loc = 1055+k;
+                        loc = 80+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1056))) {
-                    if (k>(1071-1056)) {
-                        loc = 1039+(k-(1071-1056));
+                if ((((int) text.charAt(i)) == (81))) {
+                    if (k>(90-81)) {
+                        loc = 64+(k-(90-81));
                     }else{
-                        loc = 1056+k;
+                        loc = 81+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1057))) {
-                    if (k>(1071-1057)) {
-                        loc = 1039+(k-(1071-1057));
+                if ((((int) text.charAt(i)) == (82))) {
+                    if (k>(90-82)) {
+                        loc = 64+(k-(90-82));
                     }else{
-                        loc = 1057+k;
+                        loc = 82+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1058))) {
-                    if (k>(1071-1058)) {
-                        loc = 1039+(k-(1071-1058));
+                if ((((int) text.charAt(i)) == (83))) {
+                    if (k>(90-83)) {
+                        loc = 64+(k-(90-83));
                     }else{
-                        loc = 1058+k;
+                        loc = 83+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1059))) {
-                    if (k>(1071-1059)) {
-                        loc = 1039+(k-(1071-1059));
+                if ((((int) text.charAt(i)) == (84))) {
+                    if (k>(90-84)) {
+                        loc = 64+(k-(90-84));
                     }else{
-                        loc = 1059+k;
+                        loc = 84+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1060))) {
-                    if (k>(1071-1060+1)) {
-                        loc = 1039+(k-(1071-1060));
+                if ((((int) text.charAt(i)) == (85))) {
+                    if (k>(90-85)) {
+                        loc = 64+(k-(90-85));
                     }else{
-                        loc = 1060+k;
+                        loc = 85+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1061))) {
-                    if (k>(1071-1061)) {
-                        loc = 1039+(k-(1071-1061));
+                if ((((int) text.charAt(i)) == (86))) {
+                    if (k>(90-86)) {
+                        loc = 64+(k-(90-86));
                     }else{
-                        loc = 1061+k;
+                        loc = 86+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1062))) {
-                    if (k>(1071-1062)) {
-                        loc = 1039+(k-(1071-1062));
+                if ((((int) text.charAt(i)) == (87))) {
+                    if (k>(90-87)) {
+                        loc = 64+(k-(90-87));
                     }else{
-                        loc = 1062+k;
+                        loc = 87+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1063))) {
-                    if (k>(1071-1063)) {
-                        loc = 1039+(k-(1071-1063));
+                if ((((int) text.charAt(i)) == (88))) {
+                    if (k>(90-88)) {
+                        loc = 64+(k-(90-88));
                     }else{
-                        loc = 1063+k;
+                        loc = 88+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1064))) {
-                    if (k>(1071-1064)) {
-                        loc = 1039+(k-(1071-1064));
+                if ((((int) text.charAt(i)) == (89))) {
+                    if (k>(90-89)) {
+                        loc = 64+(k-(90-89));
                     }else{
-                        loc = 1064+k;
+                        loc = 89+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1065))) {
-                    if (k>(1071-1065)) {
-                        loc = 1039+(k-(1071-1065));
+                if ((((int) text.charAt(i)) == (90))) {
+                    if (k>(90-90)) {
+                        loc = 64+(k-(90-90));
                     }else{
-                        loc = 1065+k;
+                        loc = 90+k;
                     }
                     n_text.append((char)loc);
                 }
 
-                if ((((int) text.charAt(i)) == (1066))) {
-                    if (k>(1071-1066)) {
-                        loc = 1039+(k-(1071-1066));
-                    }else{
-                        loc = 1066+k;
-                    }
-                    n_text.append((char)loc);
-                }
-
-                if ((((int) text.charAt(i)) == (1067))) {
-                    if (k>(1071-1067)) {
-                        loc = 1039+(k-(1071-1067));
-                    }else{
-                        loc = 1067+k;
-                    }
-                    n_text.append((char)loc);
-                }
-
-                if ((((int) text.charAt(i)) == (1068))) {
-                    if (k>(1071-1068)) {
-                        loc = 1039+(k-(1071-1068));
-                    }else{
-                        loc = 1068+k;
-                    }
-                    n_text.append((char)loc);
-                }
-
-                if ((((int) text.charAt(i)) == (1069))) {
-                    if (k>(1071-1069)) {
-                        loc = 1039+(k-(1071-1069));
-                    }else{
-                        loc = 1069+k;
-                    }
-                    n_text.append((char)loc);
-                }
-
-                if ((((int) text.charAt(i)) == (1070))) {
-                    if (k>(1071-1070)) {
-                        loc = 1039+(k-(1071-1070));
-                    }else{
-                        loc = 1070+k;
-                    }
-                    n_text.append((char)loc);
-                }
-
-                if ((((int) text.charAt(i)) == (1071))) {
-                    if (k>(1071-1071)) {
-                        loc = 1039+(k-(1071-1071));
-                    }else{
-                        loc = 1071+k;
-                    }
-                    n_text.append((char)loc);
-                }
 
 
             }
@@ -351,9 +298,6 @@ public class Caesar{
     Caesar() throws InterruptedException {
         Scanner scn = new Scanner(System.in);
         System.out.println("Активирован шифр Цезаря.");
-        System.out.println("Шифратор не поддерживает использование символов Ё и ё ");
-        System.out.println("Следовательно, алфавит содержит 32 символа.");
-        System.out.println("");
         System.out.println("Введите текст: ");
 
         String text = scn.nextLine();
